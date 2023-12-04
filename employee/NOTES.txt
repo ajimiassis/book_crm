@@ -1,0 +1,34 @@
+To create virtual environment
+    py -m venv name(eg:myworld)
+
+Then you have to activate the environment, by typing this command:
+    myworld\Scripts\activate.bat
+
+Note: You must activate the virtual environment every time you open the command prompt to work on your project.
+
+Run the Django project
+    py manage.py runserver
+
+To create an app
+    py manage.py startapp members
+
+[CTRL] [C] to stop the server and you should be back in the virtual environment.
+
+#venv\Scripts\activate.bat
+#django-admin startproject projectname
+#python manage.py runserver
+#python manage.py startapp appname
+#python manage.py makemigrations
+#python manage.py migrate
+#models:which is used to perform certain  actions using data eg:CRUD-CREATE,READ/RETRIEVE,UPDATE,DELETE
+#django default db SQLite3
+#object relational mapping(ORM) is the query of django 
+# ctrl Z=exit from shell
+#first import model in shell
+#variable=modelname.objects.all()
+#then mention the variable
+#conditions given to a field is called constraints
+#to create modelname.objects.create
+#valid data is called cleaned data
+(**kwargs)(a dictionary) : provides with flexibility to use keyword arguments in our program.
+Using it as parameter ,we can eventually pass many arguments(requests)

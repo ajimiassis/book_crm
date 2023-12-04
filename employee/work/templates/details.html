@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        table{
+            text-align: center;
+            background-color: chartreuse;
+            margin: auto;
+
+        }
+    </style>
+<body>
+    <h2 style="text-align:center;">BOOK DETAILS</h2>
+    <table border="2px">
+       
+
+        <tr>
+            <th>name</th>
+            <th>email</th>
+            <th>course</th>
+        </tr>
+        {%for book in data%}
+        <tr>
+        <td>{{book.name}}</td>
+        <td>{{book.email}}</td>
+        <td>{{book.course}}</td>
+        </tr>
+        <td>
+            <a href="{%url'details-det'details.id%}">Link</a>
+        </td>
+    {%endfor%}
+    </table>
+</body>
+</html>
